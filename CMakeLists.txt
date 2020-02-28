@@ -5,6 +5,7 @@ project(xtmlink)
 add_library(xtmlink SHARED xtmlink.cpp)
 
 target_include_directories(xtmlink PRIVATE link/include)
+target_include_directories(xtmlink PRIVATE link/modules/asio-standalone/asio/include)
 
 # this is dangerous - it would be much better to use dynamic lookup for
 # llvm_zone_malloc_from_current_zone *only* but I can't find the magic
