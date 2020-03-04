@@ -2,7 +2,7 @@
 
 extern "C" {
 
-  Link* link_init(double bpm) {
+  ableton::Link* link_new(double bpm) {
 	return new ableton::Link(bpm);
   }
 
